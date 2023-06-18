@@ -17,4 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize(500, 500);
   renderer.render(scene, camera);
+
+  document.body.appendChild(renderer.domElement);
 });
